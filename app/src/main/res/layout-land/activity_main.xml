@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/titulo_aplicacion"/>
+
+    <TableLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:stretchColumns="*">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00D3BEBE"
+            android:fontFamily="@font/waiting_for_the_sunrise"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:shadowColor="#00ECE2E2"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="@string/titulo_aplicacion"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+        <TableRow>
+
+            <Button
+                android:id="@+id/button"
+                style="@style/estilo_boton_apaisado"
+                android:text="@string/historia" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/estilo_boton_apaisado"
+                android:text="@string/ubicacion" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/estilo_boton_apaisado"
+                android:text="@string/datos" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/estilo_boton_apaisado"
+                android:text="@string/salir" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">City of Logroño</string>
+    <string name="titulo_aplicacion">City of Logroño</string>
+    <string name="historia">History</string>
+    <string name="ubicacion">Location</string>
+    <string name="datos">Interesting facts</string>
+    <string name="salir">Exit</string>
+</resources>
